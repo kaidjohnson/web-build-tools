@@ -1,5 +1,6 @@
 // Copyright (c) Microsoft Corporation. All rights reserved. Licensed under the MIT license.
 // See LICENSE in the project root for license information.
+// Foo
 
 /**
  * "baseCommand" from command-line.schema.json
@@ -23,6 +24,7 @@ export interface IBulkCommandJson extends IBaseCommandJson {
   enableParallelism: boolean;
   ignoreDependencyOrder?: boolean;
   ignoreMissingScript?: boolean;
+  incremental?: boolean;
   allowWarningsInSuccessfulBuild?: boolean;
 }
 
